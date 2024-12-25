@@ -9,11 +9,13 @@ import { NgFor } from '@angular/common';
 import { ComponentPersonalizadoComponent } from "./component-personalizado/component-personalizado.component";
 import { ComponentePaiComponent } from "./componente-pai/componente-pai.component";
 import { ExemploServicos1Component } from "./exemplo-servicos1/exemplo-servicos1.component";
+import { ExemploServicos2Component } from "./exemplo-servicos2/exemplo-servicos2.component";
+import { CicloDeVidaComponent } from "./ciclo-de-vida/ciclo-de-vida.component";
 
 
 @Component({
   selector: 'app-root',
-  imports: [PrimeiroComponentComponent, SegundoComponentComponent, PipeCustomizadoComponent, TwoWayDataBindingComponent, FormsModule, RenderizandoListasComponent, ComponentPersonalizadoComponent, ComponentePaiComponent, ExemploServicos1Component],
+  imports: [PrimeiroComponentComponent, SegundoComponentComponent, PipeCustomizadoComponent, TwoWayDataBindingComponent, FormsModule, RenderizandoListasComponent, ComponentPersonalizadoComponent, ComponentePaiComponent, ExemploServicos1Component, ExemploServicos2Component, CicloDeVidaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

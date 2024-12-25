@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { LoggerService } from '../logger.service';
 
 @Component({
   selector: 'app-exemplo-servicos1',
@@ -10,7 +11,9 @@ import { FormsModule } from '@angular/forms';
 export class ExemploServicos1Component {
 nome="";
 
+constructor(private logger: LoggerService){}
+
 adicionarNome(){
-  alert(`o nome ${this.nome} foi adicionado !`)
+  this.logger.logar(`o nome ${this.nome} foi adicionado!`)
 }
 }

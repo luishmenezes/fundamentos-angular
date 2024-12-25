@@ -1,1 +1,5 @@
-<p>exemplo-servicos2 works!</p>
+<p>Serviço 02</p>
+<label for="descricao">Digite a descrição: </label>
+<input type="text" [(ngModel)]="descricao">
+<button type="button" (click)="adicionarProduto()">Adicionar produto</button>
+<button type="button" (click)="this.logger.exibirTodosOsLogs()">Exibe todos os logs!</button>
